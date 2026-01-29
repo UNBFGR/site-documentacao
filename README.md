@@ -1,2 +1,5 @@
-# site-documentacao
-Código do site de documentação da FGR
+# Documentação Web - FGR
+Repositório destinado a manter o código do site de documentação da FGR.
+
+## ⚠️ Projeto em desenvolvimento...
+
