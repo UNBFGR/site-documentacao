@@ -1,4 +1,5 @@
 import { useLocation, useNavigate } from 'react-router-dom';
+import logo from '@/assets/logo.jpg';
 import {
   Car,
   Cog,
@@ -46,27 +47,27 @@ const technicalSections = [
     title: 'Powertrain',
     icon: Cog,
     items: [
-      { title: 'Motor', url: '/docs/powertrain/motor' },
-      { title: 'Transmissão', url: '/docs/powertrain/transmissao' },
-      { title: 'Escape', url: '/docs/powertrain/escape' },
+      { title: 'Categoria1', url: '/docs/powertrain/categoria1' },
+      { title: 'Categoria2', url: '/docs/powertrain/categoria2' },
+      { title: 'Categoria3', url: '/docs/powertrain/categoria3' },
     ],
   },
   {
     title: 'Suspensão',
     icon: Gauge,
     items: [
-      { title: 'Geometria', url: '/docs/suspensao/geometria' },
-      { title: 'Amortecedores', url: '/docs/suspensao/amortecedores' },
-      { title: 'Direção', url: '/docs/suspensao/direcao' },
+      { title: 'Categoria1', url: '/docs/suspensao/categoria1' },
+      { title: 'Categoria2', url: '/docs/suspensao/categoria2' },
+      { title: 'Categoria3', url: '/docs/suspensao/categoria3' },
     ],
   },
   {
     title: 'Aerodinâmica',
     icon: Wind,
     items: [
-      { title: 'Asas', url: '/docs/aerodinamica/asas' },
-      { title: 'Difusor', url: '/docs/aerodinamica/difusor' },
-      { title: 'Simulações CFD', url: '/docs/aerodinamica/cfd' },
+      { title: 'Categoria1', url: '/docs/aerodinamica/categoria1' },
+      { title: 'Categoria2', url: '/docs/aerodinamica/categoria2' },
+      { title: 'Categoria3', url: '/docs/aerodinamica/categoria3' },
     ],
   },
   {
@@ -74,17 +75,17 @@ const technicalSections = [
     icon: Car,
     items: [
       { title: 'Estrutura', url: '/docs/chassis/estrutura' },
-      { title: 'Segurança', url: '/docs/chassis/seguranca' },
-      { title: 'Ergonomia', url: '/docs/chassis/ergonomia' },
+      { title: 'Categoria2', url: '/docs/chassis/categoria2' },
+      { title: 'Categoria3', url: '/docs/chassis/categoria3' },
     ],
   },
   {
     title: 'Elétrica',
     icon: Zap,
     items: [
-      { title: 'ECU', url: '/docs/eletrica/ecu' },
-      { title: 'Sensores', url: '/docs/eletrica/sensores' },
-      { title: 'Fiação', url: '/docs/eletrica/fiacao' },
+      { title: 'Categoria1', url: '/docs/eletrica/categoria1' },
+      { title: 'Categoria2', url: '/docs/eletrica/categoria2' },
+      { title: 'Categoria3', url: '/docs/eletrica/categoria3' },
     ],
   },
 ];
@@ -94,18 +95,18 @@ const managementSections = [
     title: 'Gestão',
     icon: Users,
     items: [
-      { title: 'Organograma', url: '/docs/gestao/organograma' },
-      { title: 'Cronograma', url: '/docs/gestao/cronograma' },
-      { title: 'Processos', url: '/docs/gestao/processos' },
+      { title: 'Categoria1', url: '/docs/gestao/categoria1' },
+      { title: 'Categoria2', url: '/docs/gestao/categoria2' },
+      { title: 'Categoria3', url: '/docs/gestao/categoria3' },
     ],
   },
   {
     title: 'Procedimentos',
     icon: FileText,
     items: [
-      { title: 'Manutenção', url: '/docs/procedimentos/manutencao' },
-      { title: 'Testes', url: '/docs/procedimentos/testes' },
-      { title: 'Segurança', url: '/docs/procedimentos/seguranca' },
+      { title: 'Categoria1', url: '/docs/procedimentos/categoria1' },
+      { title: 'Categoria2', url: '/docs/procedimentos/categoria2' },
+      { title: 'Categoria3', url: '/docs/procedimentos/categoria3' },
     ],
   },
 ];
@@ -129,7 +130,10 @@ export function AppSidebar() {
       <SidebarHeader className="border-b border-sidebar-border p-4">
         <div className="flex items-center gap-3">
           <div className="w-10 h-10 bg-sidebar-primary rounded-lg flex items-center justify-center">
-            <Car className="w-6 h-6 text-sidebar-primary-foreground" />
+            <img
+              src={logo}
+              alt="Logo FGR"
+              className="w-full h-full object-contain" />
           </div>
           <div>
             <h1 className="font-bold text-lg text-sidebar-foreground">FGR</h1>
