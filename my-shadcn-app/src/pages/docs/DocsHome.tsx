@@ -1,4 +1,4 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { 
   Car, 
   Cog, 
@@ -6,7 +6,6 @@ import {
   Wind, 
   Gauge, 
   Users,
-  FileText,
   BookOpen,
   ArrowRight
 } from 'lucide-react';
