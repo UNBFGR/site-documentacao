@@ -10,7 +10,6 @@ import {
   Users,
   FileText,
   BookOpen,
-  Settings,
   LogOut,
   ChevronDown,
   Home,
