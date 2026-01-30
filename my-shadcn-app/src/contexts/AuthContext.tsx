@@ -8,7 +8,7 @@ interface AuthContextType {
 
 const AuthContext = createContext<AuthContextType | null>(null);
 
-// Credenciais fixas - altere aqui conforme necessário
+// Alterar aqui conforme necessário
 const VALID_USERNAME = 'fgr';
 const VALID_PASSWORD = 'fgr2026';
 

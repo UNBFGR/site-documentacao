@@ -1,4 +1,4 @@
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate, Link } from 'react-router-dom';
 import logo from '@/assets/logo.jpg';
 import {
   Car,
@@ -152,10 +152,10 @@ export function AppSidebar() {
                   asChild
                   isActive={isActive(item.url)}
                 >
-                  <a href={item.url}>
+                  <Link to={item.url}>
                     <item.icon className="w-4 h-4" />
                     <span>{item.title}</span>
-                  </a>
+                  </Link>
                 </SidebarMenuButton>
               </SidebarMenuItem>
             ))}
@@ -192,7 +192,7 @@ export function AppSidebar() {
                               asChild
                               isActive={isActive(item.url)}
                             >
-                              <a href={item.url}>{item.title}</a>
+                              <Link to={item.url}>{item.title}</Link>
                             </SidebarMenuSubButton>
                           </SidebarMenuSubItem>
                         ))}
@@ -235,7 +235,7 @@ export function AppSidebar() {
                               asChild
                               isActive={isActive(item.url)}
                             >
-                              <a href={item.url}>{item.title}</a>
+                              <Link to={item.url}>{item.title}</Link>
                             </SidebarMenuSubButton>
                           </SidebarMenuSubItem>
                         ))}
