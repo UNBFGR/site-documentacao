@@ -16,7 +16,7 @@ const sections = [
     title: 'Powertrain',
     description: 'Sei lá as parada do powertrain',
     icon: Cog,
-    href: '/docs/powertrain/categoria1',
+    href: '/docs/powertrain/categoria1', 
     color: 'bg-primary/10 text-primary',
   },
   {
@@ -42,9 +42,9 @@ const sections = [
   },
   {
     title: 'Elétrica',
-    description: 'Highvoltage e lowvoltage hihih nao sei',
+    description: 'Inserir aqui breve descrição',
     icon: Zap,
-    href: '/docs/eletrica/categoria1',
+    href: '/docs/eletrica/BMS',
     color: 'bg-primary/10 text-primary',
   },
   {

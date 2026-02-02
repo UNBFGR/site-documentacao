@@ -16,9 +16,10 @@ const docContent: Record<string, {
   lastUpdate: string;
   sections: Array<{
     title: string;
-    content: string;
+    content: string[];
     type?: 'info' | 'warning' | 'success';
     image?: boolean;
+    
   }>;
 
 // -----------------> POWETRAIN <------------------------------
@@ -30,21 +31,29 @@ const docContent: Record<string, {
     sections: [
       {
         title: 'Sobre',
-        content: 'Aí escreve tipo sobre ta ligado eu sou só dev galera ainda to aprendendo de carro.',
-      },
+        content: [
+          'Aí escreve tipo sobre ta ligado eu sou só dev galera ainda to aprendendo de carro.',
+        ]
+        },
       {
         title: 'Restrição ou info importante',
-        content: 'Conforme regulamento FSAE, se não seguir isso aqui nosso piloto MORRE GALERA ELE MORRE!!',
+        content: [
+          'Conforme regulamento FSAE, se não seguir isso aqui nosso piloto MORRE GALERA ELE MORRE!!',
+        ],
         type: 'info',
       },
       {
         title: 'Diagrama mapa mental foto não sei',
-        content: 'Diagrama técnico e bem maneiro',
+        content: [
+          'Diagrama técnico e bem maneiro',
+        ],
         image: true,
       },
       {
         title: 'Manutenção dia tal',
-        content: 'Verificar se não vai explodir toda quarta feira.',
+        content: [
+          'Verificar se não vai explodir toda quarta feira.',
+        ],
         type: 'warning',
       },
     ],
@@ -57,11 +66,11 @@ const docContent: Record<string, {
     sections: [
       {
         title: 'Sistema de sei la',
-        content: 'fjsdkfhdjsfhdj.',
+        content: ['Conteúdo maneiro sobre o sistema de sei la.'],
       },
       {
         title: 'Blah Blah',
-        content: 'as parada aqui',
+        content: ['as parada aqui'],
       },
     ],
   },
@@ -75,15 +84,21 @@ const docContent: Record<string, {
     sections: [
       {
         title: 'Parâmetros Principais',
-        content: 'Dados maneiros e ângulos e carros e suspensão.',
+        content: [
+          'Dados maneiros e ângulos e carros e suspensão.',
+        ],
       },
       {
         title: 'Sustenido',
-        content: 'Acho que a suspensão suspende então sustenido.',
+        content: [
+          'Acho que a suspensão suspende então sustenido.',
+        ],
       },
       {
         title: 'Diagrama lindo',
-        content: 'Vista frontal e lateral da suspensão :) (deve ter isso né)',
+        content: [
+          'Vista frontal e lateral da suspensão :) (deve ter isso né)',
+        ],
         image: true,
       },
     ],
@@ -99,15 +114,15 @@ const docContent: Record<string, {
     sections: [
       {
         title: 'Qualquer título',
-        content: 'Qualquer título',
+        content: ['Qualquer título'],
       },
       {
         title: 'Qualquer título',
-        content: 'Qualquer coisa',
+        content: ['Qualquer coisa'],
       },
       {
         title: 'Qualquer título',
-        content: 'Qualquer coisa',
+        content: ['Qualquer coisa'],
         image: true,
       },
     ],
@@ -122,15 +137,15 @@ const docContent: Record<string, {
     sections: [
       {
         title: 'Qualquer título',
-        content: 'Qualquer título',
+        content: ['Qualquer título'],
       },
       {
         title: 'Qualquer título',
-        content: 'Qualquer coisa',
+        content: ['Qualquer coisa'],
       },
       {
         title: 'Qualquer título',
-        content: 'Qualquer coisa',
+        content: ['Qualquer coisa'],
         image: true,
       },
     ],
@@ -138,24 +153,72 @@ const docContent: Record<string, {
 
 // -----------------> ELÉTRICA <------------------------------
 
-  'eletrica/categoria1': {
-    title: 'Eletrica EV',
+  'eletrica/BMS': {
+    title: 'Elétrica: Battery Management System ',
     category: 'Eletrica',
-    lastUpdate: '30/01/2026',
+    lastUpdate: '02/02/2026',
     sections: [
       {
-        title: 'Qualquer título',
-        content: 'Qualquer título',
+        title: 'Overview do circuito',
+        content: [
+          'O Battery Management System é baseado no módulo BQ79616EVM, capaz de monitorar, proteger, balancear e comunicar células de baterias de íon-lítio. ',
+          'Ele mede com alta precisão as tensões individuais de até 16 células (máx. 80 V por módulo), realiza balanceamento passivo de carga e fornece mais ',
+          'alguns dados importantes a mais, como por exemplo o State of Charge e State of Health, ambos autoexplicativos. ',
+          'O sistema pode operar de forma empilhável (stack), permitindo a conexão em série de até 35 módulos para pacotes de baterias de alta tensão (até 2400 V). ',
+          'Mas no nosso caso só serão utilizados 4 módulos em stack, capazes de monitorar e balancear seis sessões.',
+        ],
       },
       {
-        title: 'Qualquer título',
-        content: 'Qualquer coisa',
+        title: 'Regulamento sobre esse circuito',
+        content: [
+          'De acordo com o FSAE Rules 2026, temos essa regras que regem esse importante circuito. ',
+        ],
       },
       {
-        title: 'Qualquer título',
-        content: 'Qualquer coisa',
-        image: true,
+        title: '',
+        content: ['-> O BMS deve monitorar tensão e temperatura quando:',],
       },
+      {
+        title: '',
+        content: [ 'a) o sistema de tração (Tractive System) estiver ativo;',],
+      },
+      {
+        title: '',
+        content: [ 'b) a bateria estiver conectada a um carregador.',],
+      },
+      {
+        title: '',
+        content: ['-> Deve haver isolamento galvânico entre módulos (module-to-module) conforme aprovado no documento ESF.',],
+      },
+      {
+        title: '',
+        content: ['-> O balanceamento de células não pode funcionar quando o circuito de desligamento (Shutdown Circuit) estiver aberto.',],
+      },
+      {
+        title: '',
+        content: ['-> O BMS deve detectar:',],
+      },
+      {
+        title: '',
+        content: ['a) tensão fora dos valores permitidos;',],
+      },
+      {
+        title: '',
+        content: ['b) corrente excessiva nos fios de medida de tensão ou interrupção desses fios;',],
+      },
+      {
+        title: '',
+        content: ['c) temperatura fora dos limites;',],
+      },
+      {
+        title: '',
+        content: ['d) medições de tensão ou temperatura faltantes ou interrompidas;',],
+      },
+      {
+        title: '',
+        content: ['e) falha interna do próprio BMS;',],
+      },
+      
     ],
   },
 
@@ -169,15 +232,15 @@ const docContent: Record<string, {
     sections: [
       {
         title: 'Qualquer título',
-        content: 'Qualquer título',
+        content: ['Qualquer título'],
       },
       {
         title: 'Qualquer título',
-        content: 'Qualquer coisa',
+        content: ['Qualquer coisa'],
       },
       {
         title: 'Qualquer título',
-        content: 'Qualquer coisa',
+        content: ['Qualquer coisa'],
         image: true,
       },
     ],
