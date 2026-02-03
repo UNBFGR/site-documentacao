@@ -83,7 +83,7 @@ const technicalSections = [
     icon: Zap,
     items: [
       { title: 'BMS', url: '/docs/eletrica/BMS' },
-      { title: 'Categoria2', url: '/docs/eletrica/categoria2' },
+      { title: 'BSPD', url: '/docs/eletrica/BSPD' },
       { title: 'Categoria3', url: '/docs/eletrica/categoria3' },
     ],
   },

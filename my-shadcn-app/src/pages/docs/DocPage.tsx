@@ -3,14 +3,19 @@ import { useParams } from 'react-router-dom';
 import { Separator } from '@/components/ui/separator';
 import { Badge } from '@/components/ui/badge';
 import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 import bmsDoc from './eletrica/bms.md?raw';
+import bspdDoc from './eletrica/bspd.md?raw';
+
+//import remarkGfm from 'remark-gfm'
+
 import { 
   //AlertTriangle, 
   //CheckCircle2, 
   //Info,
   //Image as ImageIcon,
   FileText
-} from 'lucide-react';
+} from 'lucide-react';  
 
 const docContent: Record<string, {
   title: string;
@@ -20,7 +25,7 @@ const docContent: Record<string, {
 
 // -----------------> POWETRAIN <------------------------------
 }> = {
-    'powertrain/categoria1': {
+  'powertrain/categoria1': {
     title: 'Titulo',
     category: 'Powertrain',
     lastUpdate: '02/02/2026',
@@ -33,7 +38,6 @@ const docContent: Record<string, {
     lastUpdate: '02/02/2026',
     markdown: bmsDoc,
   },
-  
 
   // -----------------> SUSPENSÃO <------------------------------
 
@@ -44,9 +48,8 @@ const docContent: Record<string, {
     markdown: bmsDoc,
   },
 
-// -----------------> AERODINÂMICA <------------------------------
+  // -----------------> AERODINÂMICA <------------------------------
 
-  
   'aerodinamica/categoria1': {
     title: 'Titulo',
     category: 'Aerodinâmica',
@@ -54,7 +57,7 @@ const docContent: Record<string, {
     markdown: bmsDoc,
   },
 
-// -----------------> ESTRUTURAS <------------------------------
+  // -----------------> ESTRUTURAS <------------------------------
 
   'estruturas/categoria1': {
     title: 'Titulo',
@@ -63,7 +66,7 @@ const docContent: Record<string, {
     markdown: bmsDoc,
   },
 
-// -----------------> ELÉTRICA <------------------------------
+  // -----------------> ELÉTRICA <------------------------------
 
   'eletrica/BMS': {
     title: 'Elétrica: Battery Management System',
@@ -72,8 +75,14 @@ const docContent: Record<string, {
     markdown: bmsDoc,
   },
 
-// -----------------> GESTÃO <------------------------------
+  'eletrica/BSPD': {
+    title: 'Elétrica: Brake System Plausibility Device',
+    category: 'Elétrica',
+    lastUpdate: '02/02/2026',
+    markdown: bspdDoc,
+  },
 
+  // -----------------> GESTÃO <------------------------------
 
   'gestao/categoria1': {
     title: 'Titulo',
@@ -82,25 +91,6 @@ const docContent: Record<string, {
     markdown: bmsDoc,
   },
 };
-
-// -----------------> DEFAULT <------------------------------
-/*
-const defaultContent = {
-  title: 'Documentação',
-  category: 'Geral',
-  lastUpdate: 'Em construção',
-  sections: [
-    {
-      title: 'Conteúdo em Desenvolvimento',
-      content: 'Esta seção está sendo desenvolvida. Em breve, você encontrará aqui toda a documentação técnica necessária.',
-      type: 'info' as const,
-    },
-    {
-      title: 'Como Contribuir',
-      content: 'Para adicionar conteúdo a esta página, entre em contato com o responsável pela documentação da equipe.',
-    },
-  ],
-};*/
 
 export default function DocPage() {
   const { category, page } = useParams();
@@ -140,7 +130,9 @@ Para adicionar conteúdo a esta página, entre em contato com o responsável pel
 
       {/* Markdown Content */}
       <article className="prose prose-neutral dark:prose-invert max-w-none">
-        <ReactMarkdown>{doc.markdown}</ReactMarkdown>
+        <ReactMarkdown remarkPlugins={[remarkGfm]}>
+          {doc.markdown}
+        </ReactMarkdown>
       </article>
 
       {/* Footer */}
