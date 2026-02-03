@@ -47,9 +47,13 @@ De acordo com o **FSAE Rules 2026**, aplicam-se as seguintes regras:
 
 - Deve haver monitoramento de pelo menos 20% das células quanto à temperatura, distribuídas igualmente pelo contêiner da Tractive Battery (mais conhecido como acumulador).
 
+---
+
 ## 3 - Local e fixação
 
 Os módulos obrigatoriamente precisam estar vinculados no HV, e mais especificamente no acumulador, encontramos a melhor solução de acoplar as placas em stack na tampa do acumulador, juntamente com seus chicotes.
+
+---
 
 ## 4 - Chicote
 
@@ -60,8 +64,18 @@ Os módulos obrigatoriamente precisam estar vinculados no HV, e mais especificam
 | J4 / J5 | GPIO / Termistores | GPIO1–GPIO8 | Entradas configuráveis para sensores de temperatura. *(Recomenda-se chicote dedicado)* |
 | J10 / J11 | Comunicação alta/baixa (stack) | COMH_P/N, COML_P/N | Barramento diferencial isolado para empilhamento de módulos. |
 
-- **J10** (envia comunicação) e **J11** (recebe comunicação) precisam estar trançados (nossos atuais são trançados) para reduzir ruídos EMI, e acredito que seria melhor ainda se esses cabos fossem blindados, visto que algumas placas não estavam comunicando bem entre si.
-- **J15** que é a conexão HV do módulo precisa ser blindado pela alta tensão e minimizar ruídos.
+- **J10** (envia comunicação) e **J11** (recebe comunicação):
+
+  Precisam estar trançados (nossos atuais são trançados) para reduzir ruídos EMI.
+  Idealmente, esses cabos deveriam ser blindados, pois algumas placas não estavam
+  comunicando corretamente entre si.
+
+- **J15**:
+
+  Conexão HV do módulo. O chicote precisa ser devidamente blindado devido à alta
+  tensão, além de minimizar interferências eletromagnéticas.
+
+---
 
 ## 5 - Filiação
 
@@ -70,12 +84,16 @@ Os módulos obrigatoriamente precisam estar vinculados no HV, e mais especificam
 - Dados: tensão das células, temperatura (via GPIO/termistores) e status de balanceamento.
 - Envia sinal para o *Shutdown* em caso de falhas ou situações críticas, como: sub e sobretensão, sub e sobrecorrente, falhas internas do BMS e temperaturas críticas.
 
+---
+
 ## 6 - Hardware
 
 O necessário para montar o circuito basicamente são os componentes do módulo:
 **BQ79616EVM-021 Bill of Materials (BOM)**: disponível nesta planilha do excel:
 
 [Planilha](https://unbbr-my.sharepoint.com/:x:/g/personal/232002682_aluno_unb_br/IQDZPonYBuYGSKthldDqnKtnAQlwohg9fcs06xLibJ2W-Dk?rtime=9JlS6Bpj3kg) .
+
+---
 
 ## 7 - Esquemático
 
@@ -84,13 +102,14 @@ O necessário para montar o circuito basicamente são os componentes do módulo:
 
 `User's Guide - BQ79616-Q1, BQ75614-Q1, and BQ79656-Q1 - Evaluation Modules (Seção 8.1)`
 
+---
+
 ## 8 - Cronograma conceito-fabricação
 
 Tempo estimado: **25 semanas** (considerando a insuficiência de tempo do Daniel e do Felipe que estão com outras prioridades).
 
 ![Tabela](./img/image.jpg)
 
-```
-Projetado por: Gustavo Resende, Daniel Ribeiro e Felipe Andrade
-```
+
+> Projetado por: Gustavo Resende, Daniel Ribeiro e Felipe Andrade
 
