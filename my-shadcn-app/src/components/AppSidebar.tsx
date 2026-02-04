@@ -84,7 +84,7 @@ const technicalSections = [
     items: [
       { title: 'BMS', url: '/docs/eletrica/BMS' },
       { title: 'BSPD', url: '/docs/eletrica/BSPD' },
-      { title: 'Categoria3', url: '/docs/eletrica/categoria3' },
+      { title: 'Circuito APPS-BSE', url: '/docs/eletrica/Circuito-APPS-BSE' },
     ],
   },
 ];
