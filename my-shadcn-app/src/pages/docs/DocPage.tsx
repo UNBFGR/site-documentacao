@@ -6,8 +6,7 @@ import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import bmsDoc from './eletrica/bms.md?raw';
 import bspdDoc from './eletrica/bspd.md?raw';
-
-//import remarkGfm from 'remark-gfm'
+import appsbseDoc from './eletrica/APPS-BSE.md?raw';
 
 import { 
   //AlertTriangle, 
@@ -78,9 +77,15 @@ const docContent: Record<string, {
   'eletrica/BSPD': {
     title: 'Elétrica: Brake System Plausibility Device',
     category: 'Elétrica',
-    lastUpdate: '02/02/2026',
+    lastUpdate: '04/02/2026',
     markdown: bspdDoc,
   },
+    'eletrica/Circuito-APPS-BSE': {
+    title: 'Elétrica: Circuito-APPS-BSE',
+    category: 'Elétrica',
+    lastUpdate: '04/02/2026',
+    markdown: appsbseDoc,
+    },
 
   // -----------------> GESTÃO <------------------------------
 

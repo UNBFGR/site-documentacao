@@ -108,7 +108,7 @@ O necessário para montar o circuito basicamente são os componentes do módulo:
 
 Tempo estimado: **25 semanas** (considerando a insuficiência de tempo do Daniel e do Felipe que estão com outras prioridades).
 
-![Tabela](./img/image.jpg)
+![Tabela](/public/docs/eletrica/bms1.jpg)
 
 
 > Projetado por: Gustavo Resende, Daniel Ribeiro e Felipe Andrade

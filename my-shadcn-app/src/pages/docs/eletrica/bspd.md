@@ -6,6 +6,8 @@ Circuito que garante que nenhuma das condições a seguir estão acontecendo:
 1. Pedal de freio e de acelerador estão sendo pressionados ao mesmo tempo(print). 
 2. Pedal de freio sendo apertado até o fim de curso por mais de um tempo delimitado por regulamento.
 
+---
+
 ## 2 - Regulamento sobre esse circuito
 
 ```
@@ -41,3 +43,40 @@ b. The test must prove the function of the complete BSPD in the vehicle, includi
 
 > The suggested test would introduce a current by a separate wire from an external power supply simulating the Tractive System current while pressing the brake pedal.
 ```
+
+---
+
+## 3 - Local e fixação
+
+Aquário de circuitos.
+
+---
+
+## 4 - Chicote
+*[Aqui vem uma lista ou tabela considerando todos os conectores desse circuito, para onde vão e o sinal que ele manda/recebe, também é necessário adicionar se o chicote tem que ser blindado e ou trançado]*
+
+---
+
+# 5 - Filiação
+Ele recebe dados do APPS e em caso de falha ele abre o circuito Shutdown.
+
+---
+
+# 6 - Hardware
+*[Tabela de componentes necessários para a montagem do circuito]*
+
+---
+
+# 7 - Esquemático
+*[Esquemático do circuito e explicação um pouco mais aprofundada sobre o funcionamento do mesmo, focando no como o circuito executa aquela ação e não o porque, caso necessário adicione também um diagrama de blocos]*
+
+---
+
+# 8 - Cronograma conceito-fabricação
+Tempo estimado: *[aqui o tempo estimado em semanas]*
+
+![Cronograma](/public/docs/eletrica/bspd1.jpg)
+
+>Projetado por: *[Seu nome.]*
+
+
