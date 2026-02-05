@@ -81,7 +81,7 @@ Finalmente, para transmitir os dados de aceleração e freio ao inversor, o Ardu
 ## 8 - Cronograma conceito-fabricação
 Tempo estimado: **6 meses**
 
-![Tabela](/public/docs/eletrica/apps3.jpg)
+![Tabela](/docs/eletrica/apps3.jpg)
 
 ---
 
