@@ -87,6 +87,7 @@ const technicalSections = [
       { title: 'Circuito APPS-BSE', url: '/docs/eletrica/Circuito-APPS-BSE' },
       { title: 'Precharge-Discharge', url: '/docs/eletrica/Precharge-Discharge' },
       { title: 'Power-Delivery', url: '/docs/eletrica/Power-Delivery' },
+      { title: 'Circuito Shutdown', url: '/docs/eletrica/Circuito-Shutdown' },
     ],
   },
 ];
