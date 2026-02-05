@@ -64,9 +64,9 @@ Também é conectado ao RTDS
 
 ## 7 - Esquemático
 
-![Esquemático](/public/docs/eletrica/apps1.jpg)
+![Esquemático](/docs/eletrica/apps1.jpg)
 
-![Diagrama](/public/docs/eletrica/apps2.jpg)
+![Diagrama](/docs/eletrica/apps2.jpg)
 
 O diagrama de blocos apresentado ilustra o funcionamento do circuito, detalhando os dados que ele recebe e envia. A seguir, uma explicação das suas principais funcionalidades.
 
