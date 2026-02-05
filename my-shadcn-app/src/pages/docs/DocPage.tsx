@@ -9,6 +9,7 @@ import bspdDoc from './eletrica/bspd.md?raw';
 import appsbseDoc from './eletrica/APPS-BSE.md?raw';
 import ppDoc from './eletrica/precharge-discharge.md?raw';
 import powerdeliveryDoc from './eletrica/circuito-power-delivery.md?raw';
+import shutdownDoc from './eletrica/circuito-shutdown.md?raw';
 
 import { 
   //AlertTriangle, 
@@ -103,6 +104,13 @@ const docContent: Record<string, {
     markdown: powerdeliveryDoc,
     },
 
+    'eletrica/Circuito-Shutdown': {
+    title: 'Elétrica: Circuito Shutdown',
+    category: 'Elétrica',
+    lastUpdate: '05/02/2026',
+    markdown: shutdownDoc,
+    },  
+    
   // -----------------> GESTÃO <------------------------------
 
   'gestao/categoria1': {
