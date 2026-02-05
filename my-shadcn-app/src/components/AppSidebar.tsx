@@ -85,6 +85,7 @@ const technicalSections = [
       { title: 'BMS', url: '/docs/eletrica/BMS' },
       { title: 'BSPD', url: '/docs/eletrica/BSPD' },
       { title: 'Circuito APPS-BSE', url: '/docs/eletrica/Circuito-APPS-BSE' },
+      { title: 'Precharge-Discharge', url: '/docs/eletrica/Precharge-Discharge' },
     ],
   },
 ];
