@@ -75,7 +75,7 @@ Ele recebe dados do APPS e em caso de falha ele abre o circuito Shutdown.
 # 8 - Cronograma conceito-fabricação
 Tempo estimado: *[aqui o tempo estimado em semanas]*
 
-![Cronograma](/public/docs/eletrica/bspd1.jpg)
+![Cronograma](/docs/eletrica/bspd1.jpg)
 
 >Projetado por: *[Seu nome.]*
 
