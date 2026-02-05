@@ -8,6 +8,7 @@ import bmsDoc from './eletrica/bms.md?raw';
 import bspdDoc from './eletrica/bspd.md?raw';
 import appsbseDoc from './eletrica/APPS-BSE.md?raw';
 import ppDoc from './eletrica/precharge-discharge.md?raw';
+import powerdeliveryDoc from './eletrica/circuito-power-delivery.md?raw';
 
 import { 
   //AlertTriangle, 
@@ -84,15 +85,22 @@ const docContent: Record<string, {
     'eletrica/Circuito-APPS-BSE': {
     title: 'Elétrica: Circuito-APPS-BSE',
     category: 'Elétrica',
-    lastUpdate: '04/02/2026',
+    lastUpdate: '05/02/2026',
     markdown: appsbseDoc,
     },
 
     'eletrica/Precharge-Discharge': {
     title: 'Elétrica: Precharge-Discharge',
     category: 'Elétrica',
-    lastUpdate: '04/02/2026',
+    lastUpdate: '05/02/2026',
     markdown: ppDoc,
+    },
+
+    'eletrica/Power-Delivery': {
+    title: 'Elétrica: Circuito Power Delivery',
+    category: 'Elétrica',
+    lastUpdate: '05/02/2026',
+    markdown: powerdeliveryDoc,
     },
 
   // -----------------> GESTÃO <------------------------------
