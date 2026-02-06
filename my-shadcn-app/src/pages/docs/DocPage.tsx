@@ -10,6 +10,7 @@ import appsbseDoc from './eletrica/APPS-BSE.md?raw';
 import ppDoc from './eletrica/precharge-discharge.md?raw';
 import powerdeliveryDoc from './eletrica/circuito-power-delivery.md?raw';
 import shutdownDoc from './eletrica/circuito-shutdown.md?raw';
+import telemetriaDoc from './eletrica/proposta-telemetria.md?raw';
 
 import { 
   //AlertTriangle, 
@@ -109,7 +110,14 @@ const docContent: Record<string, {
     category: 'Elétrica',
     lastUpdate: '05/02/2026',
     markdown: shutdownDoc,
-    },  
+    }, 
+
+    'eletrica/Proposta-Sistema-Telemetria': {
+    title: 'Elétrica: Proposta de Sistema de Telemetria',
+    category: 'Elétrica',
+    lastUpdate: '06/02/2026',
+    markdown: telemetriaDoc,
+    },
     
   // -----------------> GESTÃO <------------------------------
 

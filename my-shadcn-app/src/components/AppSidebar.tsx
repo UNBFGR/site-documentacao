@@ -88,6 +88,7 @@ const technicalSections = [
       { title: 'Precharge-Discharge', url: '/docs/eletrica/Precharge-Discharge' },
       { title: 'Power-Delivery', url: '/docs/eletrica/Power-Delivery' },
       { title: 'Circuito Shutdown', url: '/docs/eletrica/Circuito-Shutdown' },
+      { title: 'Sistema de Telemetria', url: '/docs/eletrica/Proposta-Sistema-Telemetria' },
     ],
   },
 ];
