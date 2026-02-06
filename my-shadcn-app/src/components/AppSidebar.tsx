@@ -89,6 +89,7 @@ const technicalSections = [
       { title: 'Power-Delivery', url: '/docs/eletrica/Power-Delivery' },
       { title: 'Circuito Shutdown', url: '/docs/eletrica/Circuito-Shutdown' },
       { title: 'Sistema de Telemetria', url: '/docs/eletrica/Proposta-Sistema-Telemetria' },
+      { title: 'RTDS', url: '/docs/eletrica/RTDS' },
     ],
   },
 ];

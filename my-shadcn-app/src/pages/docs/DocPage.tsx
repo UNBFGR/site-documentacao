@@ -11,6 +11,7 @@ import ppDoc from './eletrica/precharge-discharge.md?raw';
 import powerdeliveryDoc from './eletrica/circuito-power-delivery.md?raw';
 import shutdownDoc from './eletrica/circuito-shutdown.md?raw';
 import telemetriaDoc from './eletrica/proposta-telemetria.md?raw';
+import rtdsDoc from './eletrica/rtds.md?raw';
 
 import { 
   //AlertTriangle, 
@@ -117,6 +118,13 @@ const docContent: Record<string, {
     category: 'Elétrica',
     lastUpdate: '06/02/2026',
     markdown: telemetriaDoc,
+    },
+
+    'eletrica/RTDS': {
+    title: 'Elétrica: Ready to Drive System',
+    category: 'Elétrica',
+    lastUpdate: '06/02/2026',
+    markdown: rtdsDoc,
     },
     
   // -----------------> GESTÃO <------------------------------
